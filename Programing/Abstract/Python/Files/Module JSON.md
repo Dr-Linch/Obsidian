@@ -154,9 +154,9 @@ with open('sw_templates.json') as f:
     print(f.read())
 
 Когда нужно записать информацию в формате JSON в файл, лучше использовать метод dump.
+~~~
 
 ### Дополнительные параметры методов записи[](https://pyneng.readthedocs.io/ru/latest/book/17_serialization/json.html#id3 "Permalink to this heading")
-~~~
 
 Методам dump и dumps можно передавать дополнительные параметры для управления форматом вывода.
 
@@ -207,14 +207,15 @@ with open('sw_templates.json') as f:
     "switchport trunk allowed vlan"
   ]
 }
+~~~
 
 ### Изменение типа данных[](https://pyneng.readthedocs.io/ru/latest/book/17_serialization/json.html#id4 "Permalink to this heading")
-~~~
 
 Еще один важный аспект преобразования данных в формат JSON: данные не всегда будут того же типа, что исходные данные в Python.
 
 Например, кортежи при записи в JSON превращаются в списки:
 
+~~~python
 In [1]: import json
 
 In [2]: trunk_template = ('switchport trunk encapsulation dot1q',
@@ -243,6 +244,7 @@ Out[7]: list
 
 In [8]: print(templates)
 ['switchport trunk encapsulation dot1q', 'switchport mode trunk', 'switchport trunk native vlan 999', 'switchport trunk allowed vlan']
+~~~
 
 Так происходит из-за того, что в JSON используются другие типы данных и не для всех типов данных Python есть соответствия.
 
@@ -275,6 +277,7 @@ In [8]: print(templates)
 
 В формат JSON нельзя записать словарь, у которого ключи - кортежи:
 
+~~~python
 In [23]: to_json = {('trunk', 'cisco'): trunk_template, 'access': access_template}
 
 In [24]: with open('sw_templates.json', 'w') as f:
@@ -282,9 +285,11 @@ In [24]: with open('sw_templates.json', 'w') as f:
     ...:
 ...
 TypeError: key ('trunk', 'cisco') is not a string
+~~~
 
 С помощью дополнительного параметра можно игнорировать подобные ключи:
 
+~~~python
 In [25]: to_json = {('trunk', 'cisco'): trunk_template, 'access': access_template}
 
 In [26]: with open('sw_templates.json', 'w') as f:
@@ -294,10 +299,13 @@ In [26]: with open('sw_templates.json', 'w') as f:
 
 In [27]: cat sw_templates.json
 {"access": ["switchport mode access", "switchport access vlan", "switchport nonegotiate", "spanning-tree portfast", "spanning-tree bpduguard enable"]}
+~~~
 
 Кроме того, в JSON ключами словаря могут быть только строки. Но, если в словаре Python использовались числа, ошибки не будет. Вместо этого выполнится конвертация чисел в строки:
 
+~~~python
 In [28]: d = {1: 100, 2: 200}
 
 In [29]: json.dumps(d)
 Out[29]: '{"1": 100, "2": 200}'
+~~~
