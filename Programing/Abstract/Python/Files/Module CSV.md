@@ -31,15 +31,12 @@ with open('eggs.csv', 'r', newline='') as csvfile:
 
 Пример использования writer:
 
-import csv
-with open('eggs.csv', 'w', newline='') as csvfile:
-    spamwriter = csv.writer(csvfile, delimiter=' ',
-                            quotechar='|', quoting=csv.QUOTE_MINIMAL)
-    spamwriter.writerow(['Spam'] * 5 + ['Baked Beans'])
-    spamwriter.writerow(['Spam', 'Lovely Spam', 'Wonderful Spam'])
-
 ~~~python
 import csv
+with open('eggs.csv', 'w', newline='') as csvfile:
+	spamreader = csv.writer(csvfile, delimiter='', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+	spamreader.writerow(['Spam'] * 5 + ['Baked Beans'])
+	spamwriter.writerow(['Spam', 'Lovely Spam', 'Wonderful Spam'])
 ~~~
 
 [csv.field_size_limit](https://pythonworld.ru/moduli/modul-csv.html#csv.field_size_limit "Постоянная ссылка на описание функции csv.field_size_limit")([new_limit]) — текущий максимальный размер поля. Если задан new_limit, то он становится новым макс. размером.
@@ -52,19 +49,20 @@ fieldnames это последовательность ключей. Если п
 
 Пример использования:
 
->>>
+~~~python
+import csv
+with open('name.csv', newline='') as csvfile:
+	reader = csv.DictReader(csvfile)
+	for row in reader:
+		print(row['first_name'], row['last_name'])
 
->>> import csv
->>> with open('names.csv', newline='') as csvfile:
-...     reader = csv.DictReader(csvfile)
-...     for row in reader:
-...         print(row['first_name'], row['last_name'])
-...
-Eric Idle
-John Cleese
+>>> Eric Idle
+>>> John Cleese
 
->>> print(row)
-{'first_name': 'John', 'last_name': 'Cleese'}
+print(row)
+
+>>> {'first_name': 'John', 'last_name': 'Cleese'}
+~~~
 
 class [csv.DictWriter](https://pythonworld.ru/moduli/modul-csv.html#csv.DictWriter "Постоянная ссылка на описание функции csv.DictWriter")(f, fieldnames, restval='', extrasaction='raise', dialect='excel', *args, **kwds) — как writer, но отображает словари в CSV-файл.
 
@@ -80,16 +78,17 @@ class [csv.DictWriter](https://pythonworld.ru/moduli/modul-csv.html#csv.DictWri
 
 Пример использования DictWriter:
 
+~~~python
 import csv
+with open('name.csv', 'w', newline='') as csvfile:
+	fieldnames = ['first_name', 'last_name']
+	writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
 
-with open('names.csv', 'w', newline='') as csvfile:
-    fieldnames = ['first_name', 'last_name']
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-    writer.writeheader()
-    writer.writerow({'first_name': 'Baked', 'last_name': 'Beans'})
-    writer.writerow({'first_name': 'Lovely', 'last_name': 'Spam'})
+	writer.writeheader()
+	writer.writerow({'first_name': 'Baked', 'last_name': 'Beans'})
+	writer.writerow({'first_name': 'Lovely', 'last_name': 'Spam'})
     writer.writerow({'first_name': 'Wonderful', 'last_name': 'Spam'})
+~~~
 
 ## Диалекты и параметры форматирования
 
@@ -149,33 +148,41 @@ class [csv.Sniffer](https://pythonworld.ru/moduli/modul-csv.html#csv.Sniffer "�
 
 Пример использования Sniffer:
 
+~~~python
 with open('example.csv', newline='') as csvfile:
-    dialect = csv.Sniffer().sniff(csvfile.read(1024))
-    csvfile.seek(0)
-    reader = csv.reader(csvfile, dialect)
-    # ... process CSV file contents here ...
+	dialect = csv.Sniffer().sniff(csvfile.read(1024))
+	cvsfile.seek(0)
+	reader = csv.reader(csvfile, dialect)
+
+	# process CSV file contents here
+~~~
 
 ## Примеры
 
 Простейший пример чтения CSV файла:
 
+~~~python
 import csv
 with open('some.csv', newline='') as f:
-    reader = csv.reader(f)
-    for row in reader:
-        print(row)
-
+	reader = csv.reader(f)
+	for row in reader:
+		print(row)
+~~~
 Чтение файла формата [passwd](https://ru.wikipedia.org/wiki/%2Fetc%2Fpasswd):
 
+~~~python
 import csv
 with open('passwd', newline='') as f:
-    reader = csv.reader(f, delimiter=':', quoting=csv.QUOTE_NONE)
-    for row in reader:
-        print(row)
+	reader = csv.reader(f, delimiter=':', quoting=csv.QUOTE_NONE)
+	for row in reader:
+		print(row)
+~~~
 
 Простейший пример записи CSV файла:
 
+~~~python
 import csv
 with open('some.csv', 'w', newline='') as f:
-    writer = csv.writer(f)
-    writer.writerows(someiterable)
+	writer = csv.writer(f)
+	writer.writerows(someiterable)
+~~~
