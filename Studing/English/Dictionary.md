@@ -190,4 +190,8 @@
 190. Field --- отрасль
 191. Objective --- цель
 192. Perceive --- воспринимать
-193. Capac
+193. Capacity --- ёмкость
+194. Complicated --- сложный
+195. Sufficient --- достаточный
+196. Ordinary --- обычный
+197. Cellular ---
