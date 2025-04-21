@@ -86,4 +86,13 @@
 86. A compiler --- компилятор
 87. A debugger --- отладчик
 88. Removable media --- съёмный носитель
-89. 
+89. Transfer --- передача
+90. To compress --- сжимать
+91. A fan --- куллер
+92. GPU (a graphics processing unit) --- графический процессор
+93. A graphics card, a display card, a display adapter, a graphics adapter --- видеокарта
+94. HDD (a hard disk drive) --- жёсткий диск
+95. A laptop --- ноутбук
+96. WAN (Wid area network) --- глобальная широкомасштабная сеть
+97. A kernel --- ядро
+98. 
