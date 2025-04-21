@@ -173,4 +173,5 @@
 173. Valuable --- ценный, значимый
 174. Carry out (research) --- проводить
 175. Frequency --- частота
-176. 
+176. Consequently --- следовательно
+177. Fract
