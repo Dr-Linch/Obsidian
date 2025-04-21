@@ -184,4 +184,6 @@
 184. Induce --- вызывать
 185. Saturate --- насыщать
 186. Permanent -- постоянный
-187. 
+187. Circuitry --- схема
+188. Computation --- вычисление
+189. Efficiency --- эффективно
