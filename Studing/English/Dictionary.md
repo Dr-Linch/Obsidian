@@ -194,4 +194,6 @@
 194. Complicated --- сложный
 195. Sufficient --- достаточный
 196. Ordinary --- обычный
-197. Cellular ---
+197. Cellular --- сотовый
+198. Enormous --- громадный, огромный
+199. Collide --- 
