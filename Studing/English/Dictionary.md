@@ -139,4 +139,6 @@
 139. Read-only memory (ROM) --- постоянное запоминающее устройство (ПЗУ)
 140. Acceptance testing --- приёмочное тестирование
 141. Vulnerability --- уязвимость
-142. Conv
+142. Convenient --- удобный
+143. Drawbacks --- недостатки
+144. 
