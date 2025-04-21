@@ -186,4 +186,8 @@
 186. Permanent -- постоянный
 187. Circuitry --- схема
 188. Computation --- вычисление
-189. Efficiency --- эффективно
+189. Efficiency --- эффективность
+190. Field --- отрасль
+191. Objective --- цель
+192. Perceive --- воспринимать
+193. Capac
