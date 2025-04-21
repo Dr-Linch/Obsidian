@@ -131,4 +131,6 @@
 131. an optical disk drive --- оптический привод
 132. an uninterruptible power source (UPS) --- источник бесперебойного питания
 133. random-access memory (RAM) --- оперативная память (ОЗУ)
-134. Overclocki
+134. Overclocking --- разгон
+135. Trial --- пробная версия
+136. 
