@@ -141,4 +141,6 @@
 141. Vulnerability --- уязвимость
 142. Convenient --- удобный
 143. Drawbacks --- недостатки
-144. 
+144. Assembler --- сборщик
+145. Fine-tuned --- точно настроенный
+146. 
