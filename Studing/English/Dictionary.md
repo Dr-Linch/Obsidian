@@ -174,4 +174,8 @@
 174. Carry out (research) --- проводить
 175. Frequency --- частота
 176. Consequently --- следовательно
-177. Fract
+177. Fraction --- доля, часть
+178. Precise --- точный
+179. Dense --- густой, плотный
+180. equal --- равный
+181. 
