@@ -126,4 +126,7 @@
 126. To enable --- включать, активировать
 127. Command language --- командный язык
 128. Code review --- проверка кода
-129. unnoticed --- 
+129. unnoticed --- незамеченный
+130. An expansion card --- карта расширения
+131. an optical disk drive --- оптический привод
+132. an u
