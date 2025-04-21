@@ -130,4 +130,5 @@
 130. An expansion card --- карта расширения
 131. an optical disk drive --- оптический привод
 132. an uninterruptible power source (UPS) --- источник бесперебойного питания
-133. 
+133. random-access memory (RAM) --- оперативная память (ОЗУ)
+134. Overclocki
