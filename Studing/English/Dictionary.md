@@ -129,4 +129,5 @@
 129. unnoticed --- незамеченный
 130. An expansion card --- карта расширения
 131. an optical disk drive --- оптический привод
-132. an u
+132. an uninterruptible power source (UPS) --- источник бесперебойного питания
+133. 
