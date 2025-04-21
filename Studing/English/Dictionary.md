@@ -94,5 +94,30 @@
 94. HDD (a hard disk drive) --- жёсткий диск
 95. A laptop --- ноутбук
 96. WAN (Wid area network) --- глобальная широкомасштабная сеть
-97. A kernel --- ядро
-98. 
+97. A kernel --- ядро (например, операционной системы)
+98. GUI (a graphical user interface) --- графический пользовательский интерфейс
+99. a plug-in (plugin) --- плагин, расширение, дополнительный программный модуль
+100. Application software --- прикладное программное обеспечение
+101. Source code --- исходный код
+102. To decrypt --- расшифровать
+103. To deploy --- развёртывать (например, приложение на сервере)
+104. To disable --- отключать, деактивировать
+105. Boilerplate --- шаблон
+106. a light-emitting diode (LED) --- светодиод
+107. A motherboard (mainboard) --- материнская плата
+108. A network card --- сетевой адаптер (сетевая карта, сетевая плата)
+109. A port --- разъём, порт
+110. A power supply unit (PSU) --- блок питания
+111. References --- ссылка, упоминание
+112. Board --- плата
+113. Background apps --- фоновое приложение
+114. respond --- отвечать
+115. A snapshot --- снимок состояния системы
+116. A spreadsheet --- электронная таблица
+117. Feedback --- обратная связь
+118. A solid-state drive (SSD) --- твердотельный накопитель
+119. A sound card, an audio card --- звуковая карта
+120. A storage device --- запоминающее устройство, накопитель
+121. Air cooling --- воздушное охлаждение
+122. Authoring --- создание, разработка
+123. 
