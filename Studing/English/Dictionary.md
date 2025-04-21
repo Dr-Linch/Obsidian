@@ -150,4 +150,5 @@
 150. High availability --- высокая доступность
 151. Compatible --- совместимый
 152. Substitute --- заменять
-153. 
+153. Negotiate --- вести переговоры
+154. Assume --- 
